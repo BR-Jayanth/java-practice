@@ -16,9 +16,11 @@ public class Conditions {
 			System.out.println("goodnight");
 		}
 		
-		
-		
-	
+//		Ternary Operator
+		var result=false;
+		String data =result? "something":"nothing";
+		System.out.println(data);
+
 	}
 
 }
