@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
 
-        let array=["apple","ball","cat"];
-        array.map((item)=>{
-            console.log(item);
-        });
+        // let array = ["apple", "ball", "cat"];
+        // array.map((item) => {
+        //     console.log(item);
+        // });
+
+        async function apicaller(){
+            const response = await fetch("http://localhost:8080/test");
+            const data = await response.text();
+            console.log(data);
+        }
+        apicaller()
     </script>
 </body>
+
 </html>
